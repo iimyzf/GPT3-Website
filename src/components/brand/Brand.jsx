@@ -6,19 +6,29 @@ const Brand = () => {
     return (
         <div className="gpt3--brand section--padding">
             <div>
-                <img src={google} alt="google" />
+                <a href="https://www.google.com" target="_blank">
+                    <img src={google} alt="google" />
+                </a>
             </div>
             <div>
-                <img src={slack} alt="slack" />
+                <a href="https://www.slack.com" target="_blank">
+                    <img src={slack} alt="slack" />
+                </a>
             </div>
             <div>
-                <img src={atlassian} alt="atlassian" />
+                <a href="https://www.atlassian.com" target="_blank">
+                    <img src={atlassian} alt="atlassian" />
+                </a>
             </div>
             <div>
-                <img src={dropbox} alt="dropbox" />
+                <a href="https://www.dropbox.com" target="_blank">
+                    <img src={dropbox} alt="dropbox" />
+                </a>
             </div>
             <div>
-                <img src={shopify} alt="shopify" />
+                <a href="https://www.shopify.com" target="_blank">
+                    <img src={shopify} alt="shopify" />
+                </a>
             </div>
         </div>
     );
