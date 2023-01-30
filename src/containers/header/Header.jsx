@@ -3,26 +3,27 @@ import people from "../../assets/people.png";
 import ai from "../../assets/ai.png";
 import "./header.css";
 
+window.onload = function () {
+    const popup = document.getElementById("popup");
+    const button = document.getElementById("popupbtn");
+
+    button.addEventListener("click", openPop);
+    window.addEventListener("click", closePop);
+    window.addEventListener("scroll", closePop);
+
+    function openPop() {
+        popup.style.display = "block";
+    }
+
+    function closePop(e) {
+        if (e.target === popup || e.type === "scroll") {
+            popup.style.display = "none";
+        }
+    }
+    console.log("Shesh!");
+};
+
 const Header = () => {
-    window.onload = function () {
-        const popup = document.getElementById("popup");
-        const button = document.getElementById("popupbtn");
-
-        button.addEventListener("click", openPop);
-        window.addEventListener("click", closePop);
-        window.addEventListener("scroll", closePop);
-
-        function openPop() {
-            popup.style.display = "block";
-        }
-
-        function closePop(e) {
-            if (e.target === popup || e.type === "scroll") {
-                popup.style.display = "none";
-            }
-        }
-    };
-
     return (
         <div className="gpt3--header section--padding" id="home">
             <div className="gpt3--header-content">
