@@ -4,23 +4,24 @@ import ai from "../../assets/ai.png";
 import "./header.css";
 
 const Header = () => {
-    let popup = document.getElementById("popup");
-    let button = document.getElementById("popupbtn");
+    window.onload = function () {
+        const popup = document.getElementById("popup");
+        const button = document.getElementById("popupbtn");
 
-    button.addEventListener("click", openPop);
+        button.addEventListener("click", openPop);
+        window.addEventListener("click", closePop);
+        window.addEventListener("scroll", closePop);
 
-    function openPop() {
-        popup.style.display = "Block";
-    }
-
-    window.addEventListener("click", closePop);
-    window.addEventListener("scroll", closePop);
-
-    function closePop(e) {
-        if (e.target === popup || e.type === "scroll") {
-            popup.style.display = "none";
+        function openPop() {
+            popup.style.display = "block";
         }
-    }
+
+        function closePop(e) {
+            if (e.target === popup || e.type === "scroll") {
+                popup.style.display = "none";
+            }
+        }
+    };
 
     return (
         <div className="gpt3--header section--padding" id="home">
@@ -50,6 +51,9 @@ const Header = () => {
                                 <b>REACT JS</b> by{" "}
                                 <b>
                                     <a
+                                        style={{
+                                            textDecoration: "underline",
+                                        }}
                                         href="https://ma.linkedin.com/in/youssaf"
                                         target="_blank"
                                         rel="noreferrer"
