@@ -28,7 +28,6 @@
     align-items: center;
     padding: 1rem;
     margin-bottom: 10rem;
-    cursor: pointer;
 }
 
 .gpt3--footer-btn p {
@@ -36,6 +35,8 @@
     font-size: 18px;
     padding: 1rem 3rem;
     color: #f4f4f4;
+    background: transparent;
+    cursor: pointer;
 }
 
 .gpt3--footer-button {

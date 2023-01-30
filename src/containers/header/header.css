@@ -67,6 +67,50 @@
     border-radius: 0 5px 5px 0;
 }
 
+.button:active {
+    transform: scale(0.95);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popcard h1 {
+    color: white;
+    font-family: var(--font-family);
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 48px;
+}
+
+.popcard {
+    background-color: black;
+    margin: 10% auto;
+    padding: 40px;
+    width: 40%;
+    text-align: left;
+    box-shadow: 0 2px 15px 0 var(--color-text);
+    border-radius: 15px;
+    animation: popup 1.2s;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .gpt3--header-content--people {
     width: 100%;
     display: flex;
@@ -109,6 +153,16 @@
     .gpt3--header-content {
         margin: 0 0 3rem;
     }
+    .popcard {
+        margin-top: 8rem;
+        padding: 30px;
+        width: 80%;
+    }
+    .popcard h1 {
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 36px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -131,6 +185,16 @@
         font-size: 16px;
         line-height: 24px;
     }
+    .popcard {
+        margin-top: 8rem;
+        padding: 30px;
+        width: 80%;
+    }
+    .popcard h1 {
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 36px;
+    }
 }
 
 @media screen and (max-width: 490px) {
@@ -146,5 +210,15 @@
     .gpt3--header-content--input button {
         font-size: 12px;
         line-height: 16px;
+    }
+    .popcard {
+        margin-top: 8rem;
+        padding: 30px;
+        width: 80%;
+    }
+    .popcard h1 {
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 36px;
     }
 }
