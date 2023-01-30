@@ -6,27 +6,47 @@ const Brand = () => {
     return (
         <div className="gpt3--brand section--padding">
             <div>
-                <a href="https://www.google.com" target="_blank">
+                <a
+                    href="https://www.google.com"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img src={google} alt="google" />
                 </a>
             </div>
             <div>
-                <a href="https://www.slack.com" target="_blank">
+                <a
+                    href="https://www.slack.com"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img src={slack} alt="slack" />
                 </a>
             </div>
             <div>
-                <a href="https://www.atlassian.com" target="_blank">
+                <a
+                    href="https://www.atlassian.com"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img src={atlassian} alt="atlassian" />
                 </a>
             </div>
             <div>
-                <a href="https://www.dropbox.com" target="_blank">
+                <a
+                    href="https://www.dropbox.com"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img src={dropbox} alt="dropbox" />
                 </a>
             </div>
             <div>
-                <a href="https://www.shopify.com" target="_blank">
+                <a
+                    href="https://www.shopify.com"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img src={shopify} alt="shopify" />
                 </a>
             </div>

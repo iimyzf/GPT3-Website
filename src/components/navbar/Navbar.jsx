@@ -10,23 +10,33 @@ const Navbar = () => {
         <div className="gpt3--navbar">
             <div className="gpt3--navbar-links">
                 <div className="gpt3--navbar-links-logo">
-                    <img src={logo} />
+                    <img src={logo} alt="logo" />
                 </div>
                 <div className="gpt3--navbar-links-container">
                     <p>
-                        <a href="#home">Home</a>
+                        <a href="#home" rel="noreferrer">
+                            Home
+                        </a>
                     </p>
                     <p>
-                        <a href="#wgpt3">What is GPT3?</a>
+                        <a href="#wgpt3" rel="noreferrer">
+                            What is GPT3?
+                        </a>
                     </p>
                     <p>
-                        <a href="#possibility">Open AI</a>
+                        <a href="#possibility" rel="noreferrer">
+                            Open AI
+                        </a>
                     </p>
                     <p>
-                        <a href="#features">Case Studies</a>
+                        <a href="#features" rel="noreferrer">
+                            Case Studies
+                        </a>
                     </p>
                     <p>
-                        <a href="#blog">Library</a>
+                        <a href="#blog" rel="noreferrer">
+                            Library
+                        </a>
                     </p>
                 </div>
             </div>
@@ -52,19 +62,29 @@ const Navbar = () => {
                     <div className="gpt3--navbar-menu-container scale-up-center">
                         <div className="gpt3--navbar-menu-container-links">
                             <p>
-                                <a href="#home">Home</a>
+                                <a href="#home" rel="noreferrer">
+                                    Home
+                                </a>
                             </p>
                             <p>
-                                <a href="#wgpt3">What is GPT3?</a>
+                                <a href="#wgpt3" rel="noreferrer">
+                                    What is GPT3?
+                                </a>
                             </p>
                             <p>
-                                <a href="#possibility">Open AI</a>
+                                <a href="#possibility" rel="noreferrer">
+                                    Open AI
+                                </a>
                             </p>
                             <p>
-                                <a href="#features">Case Studies</a>
+                                <a href="#features" rel="noreferrer">
+                                    Case Studies
+                                </a>
                             </p>
                             <p>
-                                <a href="#blog">Library</a>
+                                <a href="#blog" rel="noreferrer">
+                                    Library
+                                </a>
                             </p>
                         </div>
                         <div className="gpt3--navbar-menu-container-links-sign">
