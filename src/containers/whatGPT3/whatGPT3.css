@@ -64,7 +64,7 @@
     max-width: 510px;
 }
 
-.gpt3--whatgpt3-heading p {
+.gpt3--whatgpt3-heading a {
     font-family: var(--font-family);
     font-size: 16px;
     line-height: 30px;
@@ -98,7 +98,7 @@
         align-items: flex-start;
         margin-bottom: 0rem;
     }
-    .gpt3--whatgpt3-heading p {
+    .gpt3--whatgpt3-heading a {
         margin-top: 1rem;
     }
 }

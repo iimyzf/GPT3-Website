@@ -9,7 +9,6 @@ const Possibility = () => {
                 <img src={possibility} alt="possibility" />
             </div>
             <div className="gpt3--possibility-content">
-                <h4>Request Early Access To Get Started</h4>
                 <h1 className="gradient--text">
                     The possibilities are beyond your imagination
                 </h1>
