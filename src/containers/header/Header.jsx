@@ -20,7 +20,6 @@ window.onload = function () {
             popup.style.display = "none";
         }
     }
-    console.log("Shesh!");
 };
 
 const Header = () => {
@@ -41,7 +40,7 @@ const Header = () => {
                     <input type="email" placeholder="your e-mail address" />
 
                     <button id="popupbtn" className="button" type="button">
-                        Get Started
+                        Click Me
                     </button>
 
                     <div className="popup" id="popup">
